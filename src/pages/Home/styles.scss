@@ -48,9 +48,10 @@
       cursor: pointer;
 
       &:hover {
-        box-shadow: 12px 12px 2px 1px wheat;
+        box-shadow: 12px 12px 2px 1px $white;
         transition: 800ms;
       }
+
       p {
         color: $background;
         display: inline;

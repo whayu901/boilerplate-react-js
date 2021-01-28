@@ -10,11 +10,12 @@
   flex-direction: column;
 
   p {
-    color: white;
+    color: $white;
     font-size: calc(10px + 2vmin);
   }
+
   span {
-    color: white;
+    color: $white;
     font-size: calc(10px + 2vmin);
   }
 }
