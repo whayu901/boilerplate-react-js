@@ -32,6 +32,33 @@
     text-decoration: underline;
   }
 
+  .container-text-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    .text-box {
+      background-color: $white;
+      border-radius: 10px;
+      max-width: 20rem;
+      height: 2.5rem;
+      padding-left: 5%;
+      padding-top: 3%;
+      padding-right: 5%;
+      cursor: pointer;
+
+      &:hover {
+        box-shadow: 12px 12px 2px 1px wheat;
+        transition: 800ms;
+      }
+      p {
+        color: $background;
+        display: inline;
+        white-space: nowrap;
+      }
+    }
+  }
+
   @keyframes App-logo-spin {
     from {
       transform: rotate(0deg);

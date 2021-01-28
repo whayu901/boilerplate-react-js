@@ -3,7 +3,7 @@ import { useHistory } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 
 import "./styles.scss";
-import { ICONS } from "../../configs";
+// import { ICONS } from "../../configs";
 import { InfiniteScroll } from "../../components";
 import { documentTitle } from "../../utils";
 import { sampleAction } from "../../redux/actions";
@@ -29,12 +29,18 @@ const Component = () => {
         {[...Array(homeState.count)].map((item, index) => (
           <div className="container" key={index}>
             <header className="header">
-              <img src={ICONS.logo} className="logo" alt="logo" />
-              <p>
-                {"Edit "}
-                <code>src/App.tsx</code>
-                {" and save to reload."}
-              </p>
+              <div className="container-text-box">
+                <div
+                  className="text-box text"
+                  style={{ marginRight: 20 }}
+                  onClick={() => history.push("/slice")}
+                >
+                  <p>Hello world</p>
+                </div>
+                <div className="text-box text">
+                  <p>Hello world</p>
+                </div>
+              </div>
               <h3>{index}</h3>
               <button type="button" onClick={() => history.push("/detail")}>
                 <h2 className="link">Go To Detail</h2>
