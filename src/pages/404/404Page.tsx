@@ -18,7 +18,11 @@ const NotfoundPage = () => {
         <p>Page Not Found</p>
       </div>
       <div>
-        <button title="kembali ke home" onClick={() => history.push("/")}>
+        <button
+          className="btn btn-back-home"
+          title="kembali ke home"
+          onClick={() => history.push("/")}
+        >
           Kembali ke Home
         </button>
       </div>

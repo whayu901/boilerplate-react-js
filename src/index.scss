@@ -1,4 +1,5 @@
 // sass-lint:disable indentation
+@import "./sass/color";
 
 body {
   margin: 0;
@@ -12,4 +13,13 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.btn {
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: 10px 10px 2px 1px $white;
+    transition: 800ms;
+  }
 }

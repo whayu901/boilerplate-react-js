@@ -21,6 +21,15 @@
 }
 
 .image-404 {
-  width: 100%;
+  max-width: 50%;
   height: 50%;
+}
+
+.btn-back-home {
+  background-color: $red;
+  color: $white;
+  padding: 15px;
+  border: 0;
+  border-radius: 10px;
+  font-size: calc(1px + 2vmin);
 }
